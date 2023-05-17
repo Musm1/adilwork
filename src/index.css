@@ -1,14 +1,97 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 
 body{
-    margin:0px;
-    padding: 0px;
-    background-color: #EDE6D6;
+    width:100%;
+    height:768px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('./images/newback.jpg');
+    position: relative;
+    z-index: 0;
     font-family: 'Lato', sans-serif;
 }
+
 *{
     box-sizing: border-box;
 }
+
+
+.item{
+    margin-top: 10%;
+    min-height: 30rem;
+    min-width: 35%;
+    padding: 40px;
+  }
+
+.item img{
+    width: 100%;
+    height: 100%;
+    margin-left: 45%;
+    pointer-events: none;
+  }
+  
+  .inner-carousel{
+    display:flex;
+  }
+  .testingNew{
+    color:white;
+    margin-top: 15%;
+    margin-left: 4%;
+    font-size: 100px;
+    opacity: 100%;
+    letter-spacing: 5px;
+  }
+  .testingold{
+    font-size: 50px;
+  }
+  .carousel{
+    cursor:grab;
+    /* remove for overflow */
+    overflow: hidden; 
+  
+  }
+  .smallfont{
+    font-size: 20px;
+    margin-top: 40px;
+  }
+  
+  .logos{
+    margin-left: 90rem;
+    align-items: end;
+    justify-items: end;
+    justify-self: end;
+    display:flex;
+    padding: 10px;
+    max-width: 200px;
+    justify-content: space-between;
+  }
+  
+.firsttest{
+    width: 100%; 
+    text-align: center; 
+    border-bottom: 1px solid #000; 
+    line-height: 0.1em;
+    margin: 10px 0 20px; 
+}
+.spantest{
+    background:#fff; 
+    padding:0 10px; 
+}
+
+.logo1{
+    border-style: solid;
+    border-radius: 50%;
+    padding:25px;
+    color: wheat;
+  }
+
+.logo2{
+    border-style: solid;
+    border-radius: 50%;
+    padding:25px;
+    color: wheat;
+  }
 ul{
     list-style: none;
 }
@@ -118,6 +201,10 @@ nav .menu-btn,
 }
 .name span{
     color: #FF1414;
+}
+.fb{
+    margin-top: 12px;
+    display: flex;
 }
 .name .details{
     font-size: 23px;

@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import logo from '../images/logo.png'
 import {Link} from 'react-scroll'
+import {FaFacebookF,FaYoutube, FaLinkedin, FaSearch} from 'react-icons/fa'
+
 
 const Navbar = () => {
 
@@ -16,9 +18,10 @@ const Navbar = () => {
   window.addEventListener('scroll', changeBackground);
 
   return (
+    <div>
     <nav className={nav? "nav active": "nav"}>
       <Link to='#' className='logo'>
-        <h1>Adil Site</h1>
+        <h1>NOVURANIA</h1>
       </Link>
       <input className='menu-btn' type='checkbox' id='menu-btn'/>
       <label className='menu-icon' for="menu-btn">
@@ -37,8 +40,15 @@ const Navbar = () => {
         <li>
           <Link to="contact" smooth={true} duration={1000}>Contact Us</Link>
         </li>
+        <li className='fb'>
+          <Link to="#" smooth={true} duration={1000}><FaFacebookF/></Link>
+          <Link to="#" smooth={true} duration={1000}><FaYoutube/></Link>
+          <Link to="#" smooth={true} duration={1000}><FaSearch/></Link>
+        </li>
       </ul>
     </nav>
+    
+    </div>
   )
 }
 
